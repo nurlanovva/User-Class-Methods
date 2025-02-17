@@ -10,4 +10,9 @@ It includes classes for user data handling, user service management, and utility
 - `user_util.py` - Provides utility functions.
 - `main.py` - Runs the application.
 """
-- ![UML Diagram](uml.png)
+- ![UML Diagram](UML.png)
+
+## Output Example
+ID: 123456789, Name: Madina Nurlanova
+Age: 25
+Users count: 1
