@@ -1,0 +1,28 @@
+```plantuml
+@startuml
+class User {
+  - user_id: int
+  - name: str
+  - surname: str
+  - birthday: str
+  + get_details(): str
+  + get_age(): int
+}
+
+class UserService {
+  - users: dict
+  + add_user(user: User)
+  + find_user(user_id: int): User
+  + delete_user(user_id: int)
+  + get_number(): int
+}
+
+class UserUtil {
+  + generate_user_id(): int
+}
+
+UserService "1" -- "*" User
+UserUtil ..> User : generates
+@enduml
+```
+"""
